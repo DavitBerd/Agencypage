@@ -5,7 +5,6 @@
 @font-face {
   font-family: Barlow;
   src: url(fonts/Barlow/Barlow-Regular.ttf);
-
 }
 
 body {
@@ -443,12 +442,15 @@ footer {
     border-radius: 28px;
     background: rgba(251, 214, 0, 1);
   }
+  .button1:hover {
+    background: rgb(255, 229, 84);
+  }
   .gridA {
     grid-template-columns: 1fr;
-    
+
     grid-template-areas: "area2" "area1" "area3" "area4" "area5" "area6";
   }
-  .grid1text{
+  .grid1text {
     align-items: center;
     text-align: center;
   }
@@ -485,11 +487,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 24px;
-    letter-spacing: 3px;
-  }
-
   .button1 {
     width: 120px;
     height: 48px;
@@ -500,9 +497,15 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
+  .gridB {
+    width: 50%;
+  }
   .headtext {
     font-size: 16px;
     gap: 10px;
+  }
+  .grid5,
+  .grid6 {
+    padding-top: 300px;
   }
 }
